@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tibia Rashid Overlay for OBS</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="canonical" href="https://tibia-overlay.github.io/rashid">
+	<meta name="description" content="Design perfect Tibia Rashid overlay in seconds. Choose icon, customize color and font, and get a ready-to-use overlay URL for your stream or recording.">
+	<meta property="og:url" content="https://tibia-overlay.github.io/rashid">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Tibia Rashid Overlay for OBS">
+	<meta property="og:description" content="Design perfect Tibia Rashid overlay in seconds. Choose icon, customize color and font, and get a ready-to-use overlay URL for your stream or recording.">
+	<meta property="og:image" content="https://tibia-overlay.github.io/rashid/opengraph.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://tibia-overlay.github.io/rashid">
+	<meta name="twitter:title" content="Tibia Rashid Overlay for OBS">
+	<meta name="twitter:description" content="Design perfect Tibia Rashid overlay in seconds. Choose icon, customize color and font, and get a ready-to-use overlay URL for your stream or recording.">
+	<meta name="twitter:image" content="https://tibia-overlay.github.io/rashid/opengraph.jpg">
+	<link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+	<div class="container" role="main">
+		<h1>Tibia Rashid Overlay 💰</h1>
+		<div class="grid">
+			<div class="grid-column">
+				<div class="checkbox-wrapper">
+					<div class="check-row">
+						<input id="icon" type="checkbox" checked />
+						<label for="icon">Enable Icon</label>
+					</div>
+				</div>
+			</div>
+			<div class="grid-column">
+				<label for="color">Color</label>
+				<input type="color" id="color" value="#FFFFFF" />
+			</div>
+			<div class="grid-column">
+				<label for="font">Font</label>
+				<select id="font">
+					<option value="Arial" style="font-family: Arial">Arial</option>
+					<option value="Brush Script MT" style="font-family: Brush Script MT">Brush Script MT</option>
+					<option value="Comic Sans MS" style="font-family: Comic Sans MS">Comic Sans MS</option>
+					<option value="Courier New" style="font-family: Courier New">Courier New</option>
+					<option value="Garamond" style="font-family: Garamond">Garamond</option>
+					<option value="Georgia" style="font-family: Georgia">Georgia</option>
+					<option value="Impact" style="font-family: Impact">Impact</option>
+					<option value="Tahoma" style="font-family: Tahoma">Tahoma</option>
+					<option value="Times New Roman" style="font-family: Times New Roman">Times New Roman</option>
+					<option value="Trebuchet MS" style="font-family: Trebuchet MS">Trebuchet MS</option>
+					<option value="Verdana" style="font-family: Verdana">Verdana</option>
+				</select>
+			</div>
+		</div>
+		<label for="previewFrame">Preview</label>
+		<iframe id="previewFrame" src="overlay.html" title="Preview"></iframe>
+		<label class="finalUrlLabel" for="finalUrl">Final URL</label>
+		<input type="text" id="finalUrl" class="final-url" readonly />
+		<div class="finalUrl-info">Paste this into the <b>URL</b> field of a <b>Browser Source</b> in OBS. Don't scale
+			the source, just set the exact <b>Width</b> and <b>Height</b> for best quality.</div>
+		<div class="footer">
+			<span class="footer-text">Made by <b>Hajduko94</b></span>
+		</div>
+	</div>
+	<script src="dist/scripts.js"></script>
+</body>
+</html>
